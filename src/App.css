@@ -1,4 +1,7 @@
 .App {
-  text-align: center;
+  padding: 80px;
 }
 
+.blank-home-text {
+  text-align: center;
+}
