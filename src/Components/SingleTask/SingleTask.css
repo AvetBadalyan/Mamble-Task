@@ -1,3 +1,7 @@
 .single-task {
     display: flex;
 }
+
+.completed {
+    text-decoration: line-through;
+}
