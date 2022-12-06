@@ -22,7 +22,7 @@ export default function Form() {
   return (
     <form className="form" onSubmit={submitHandler}>
       <div className="form-input">
-        <label for="task">Task</label>
+        <label htmlFor="task">Task</label>
         <input
           type="text"
           placeholder="Type here"

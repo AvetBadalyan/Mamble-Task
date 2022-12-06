@@ -8,7 +8,7 @@ export const todoListSlice = createSlice({
   name: "todoList",
   initialState,
   reducers: {
-    addToDo: (state, action) => {
+    addTodo: (state, action) => {
       let newTodoList = {
         id: Math.random(),
         taskName: action.payload.taskName,
@@ -16,13 +16,16 @@ export const todoListSlice = createSlice({
       };
       state.todoList.push(newTodoList);
     },
-    deleteToDo: (state, action) => {
+    deleteTask: (state, action) => {
       let { todoList } = state;
       state.todoList = todoList.filter((item) => item.id !== action.payload.id);
+    },
+    toggleState: () => {
+
     },
   },
 });
 
-export const { addTodo, deleteToDo } = todoListSlice.actions;
+export const { addTodo, deleteTask, toggleState } = todoListSlice.actions;
 
 export default todoListSlice.reducer;
