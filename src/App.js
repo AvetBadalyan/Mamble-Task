@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <div className="container">
         <div className="hide-check-container">
-         <input type="checkbox" />
+          <input type="checkbox" />
           Hide completed
         </div>
         <div className="form-container">
@@ -25,10 +25,13 @@ function App() {
               <h1>So start by adding your tasks here.</h1>
             </div>
           )}
-        </div>
 
-        {todoList.length > 0 &&
-          todoList.map((todo) => <SingleTask key={todo.id} item={todo} />)}
+          <div className="todo-list">
+               {todoList.length > 0 &&
+            todoList.map((todo) => <SingleTask key={todo.id} item={todo} />)}
+          </div>
+       
+        </div>
       </div>
     </div>
   );

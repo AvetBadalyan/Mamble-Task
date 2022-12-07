@@ -1,7 +1,44 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
 .single-task {
-    display: flex;
+  display: flex;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 24px;
+  color: #666666;
 }
 
 .completed {
-    text-decoration: line-through;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
+  color: #acacac;
+}
+
+.delete-btn {
+  width: 13px;
+  height: 13px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.single-task-name-container {
+  width: 100%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: capitalize;
 }

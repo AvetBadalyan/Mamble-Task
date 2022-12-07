@@ -37,7 +37,7 @@ export default function Form() {
           Task
           <input
             type="text"
-            placeholder="Type here"
+            placeholder="Write here"
             ref={taskRef}
             onChange={changeHandler}
           />
