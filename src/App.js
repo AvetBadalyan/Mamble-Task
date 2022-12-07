@@ -10,6 +10,10 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <div className="hide-check-container">
+         <input type="checkbox" />
+          Hide completed
+        </div>
         <div className="form-container">
           <Form />
         </div>
@@ -17,7 +21,7 @@ function App() {
           {todoList.length === 0 && (
             <div className="blank-home-text">
               {" "}
-              <h2>your life is a blank page. You write on it.</h2>{" "}
+              <p>your life is a blank page. You write on it.</p>{" "}
               <h1>So start by adding your tasks here.</h1>
             </div>
           )}

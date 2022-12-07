@@ -1,7 +1,64 @@
 .App {
   padding: 80px;
+  border: 1px solid red;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid green;
+  height: 100%;
+}
+
+.hide-check-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+
+  color: #000000;
+}
+
+.form-container {
+  border: 1px solid yellow;
+}
+
+.todo-list-container {
+  border: 1px solid rgb(144, 0, 0);
 }
 
 .blank-home-text {
   text-align: center;
+  border: 1px solid brown;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.blank-home-text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  text-transform: capitalize;
+  color: #acacac;
+}
+
+.blank-home-text h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  letter-spacing: 0.002em;
+  text-transform: capitalize;
+  color: #666666;
 }
