@@ -25,10 +25,13 @@
 }
 
 .todo-list-container {
-  
+  width: 100%;
+  padding-top: 7px;
+  height: 100%;
 }
 
 .blank-home-text {
+  width: 100%;
   text-align: center;
   display: flex;
   justify-content: flex-start;
@@ -57,9 +60,4 @@
   letter-spacing: 0.002em;
   text-transform: capitalize;
   color: #666666;
-}
-
-.todo-list {
-  padding-top: 7px;
-  height: 100%;
 }

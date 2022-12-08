@@ -17,21 +17,22 @@ function App() {
         <div className="form-container">
           <Form />
         </div>
-        <div className="todo-list-container">
-          {todoList.length === 0 && (
-            <div className="blank-home-text">
-              {" "}
-              <p>your life is a blank page. You write on it.</p>{" "}
-              <h1>So start by adding your tasks here.</h1>
-            </div>
-          )}
-
-          <div className="todo-list">
-               {todoList.length > 0 &&
-            todoList.map((todo) => <SingleTask key={todo.id} item={todo} />)}
+        {todoList.length === 0 && (
+          <div className="blank-home-text">
+            {" "}
+            <p>your life is a blank page. You write on it.</p>{" "}
+            <h1>So start by adding your tasks here.</h1>
           </div>
-       
-        </div>
+        )}
+
+        {todoList.length > 0 && (
+          <div className="todo-list-container">
+            {" "}
+            {todoList.map((todo) => (
+              <SingleTask key={todo.id} item={todo} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
