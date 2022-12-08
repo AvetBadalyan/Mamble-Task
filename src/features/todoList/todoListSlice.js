@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   todoList: [],
+  isHidden: false,
 };
 
 export const todoListSlice = createSlice({
@@ -28,9 +29,13 @@ export const todoListSlice = createSlice({
         return task;
       });
     },
+    toggleHidden(state) {
+      state.isHidden = !state.isHidden;
+    },
   },
 });
 
-export const { addTodo, deleteTask, toggleState } = todoListSlice.actions;
+export const { addTodo, deleteTask, toggleState, toggleHidden } =
+  todoListSlice.actions;
 
 export default todoListSlice.reducer;

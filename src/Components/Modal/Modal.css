@@ -1,13 +1,14 @@
 .fa-solid .fa-xmark {
-    border: 1px solid red;
-   font-size:480px;
+  border: 1px solid red;
+  font-size: 480px;
 }
 
 .modal {
   position: fixed;
-  top: 50%;
+  top: calc(50% - 21px);
   left: 50%;
   transform: translate(-50%, -50%);
+
   width: 400px;
   height: 200px;
   background: #ffffff;
