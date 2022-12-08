@@ -1,0 +1,60 @@
+.fa-solid .fa-xmark {
+    border: 1px solid red;
+   font-size:480px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 200px;
+  background: #ffffff;
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #008594;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* .modal > .content {
+  width: 100%;
+  text-align: center;
+} */
+
+.modal > .actions {
+  display: flex;
+  gap: 40px;
+}
+
+.actions button {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #174348;
+  border: none;
+}
+
+.popup-arrow {
+  display: none;
+}
+[role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+[data-popup="tooltip"].popup-overlay {
+  background: rgba(0, 0, 0, 0.25);
+}

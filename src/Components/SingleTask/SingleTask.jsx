@@ -1,8 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { deleteTask, toggleState } from "../../features/todoList/todoListSlice";
+import Modal from "../Modal/Modal";
 import "./SingleTask.css";
-import deleteButton from "./../../assets//Vector.svg"
 
 export default function SingleTask({ item }) {
   const dispatch = useDispatch();
@@ -33,11 +33,7 @@ export default function SingleTask({ item }) {
         onChange={checkHandler}
       />
       <div className="single-task-name-container">{item.taskName}</div>
-      <div className="single-task-button-container">
-        <button onClick={removeTask}>
-          <img src={deleteButton} alt="delete-btn" className="delete-btn" />
-        </button>
-      </div>
+      <Modal removeTask={removeTask} />
     </div>
   );
 }
