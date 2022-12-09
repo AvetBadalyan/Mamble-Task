@@ -58,3 +58,44 @@
   text-transform: capitalize;
   color: #ffffff;
 }
+
+@media only screen and (max-width: 600px) {
+  .form {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .form-button {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  }
+
+  .form-button button {
+    width: 92px;
+    height: 44px;
+    padding: 8px 29px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .form-input {
+    max-width: 327px;
+  }
+
+  .form-input input {
+    height: 44px;
+  }
+}

@@ -6,7 +6,6 @@ import "./SingleTask.css";
 
 export default function SingleTask({ item }) {
   const dispatch = useDispatch();
-  console.log(item.isCompleted, "true");
 
   function removeTask() {
     dispatch(

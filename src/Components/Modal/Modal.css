@@ -1,5 +1,8 @@
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
 .fa-solid .fa-xmark {
-  border: 1px solid red;
   font-size: 480px;
 }
 
@@ -8,7 +11,6 @@
   top: calc(50% - 21px);
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 400px;
   height: 200px;
   background: #ffffff;
@@ -26,11 +28,6 @@
   align-items: center;
   gap: 40px;
 }
-
-/* .modal > .content {
-  width: 100%;
-  text-align: center;
-} */
 
 .modal > .actions {
   display: flex;
@@ -52,10 +49,20 @@
   display: none;
 }
 [role="tooltip"].popup-content {
-  width: 200px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
 }
 
 [data-popup="tooltip"].popup-overlay {
   background: rgba(0, 0, 0, 0.25);
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 376px) {
+  .modal {
+    width: 324px;
+    height: 140px;
+    margin: auto;
+  }
 }

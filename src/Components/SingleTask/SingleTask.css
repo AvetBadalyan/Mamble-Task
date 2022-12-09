@@ -1,16 +1,12 @@
-.material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
-
 .single-task {
   display: flex;
   height: 72px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 35px;
   border-bottom: 1px solid #e5e5e5;
-  padding: 24px;
   color: #666666;
+  padding: 20px 15.6px 20px 3px;
 }
 
 .completed {
@@ -43,3 +39,32 @@
   text-transform: capitalize;
 }
 
+@media only screen and (max-width: 600px) {
+  .single-task {
+    gap: 0;
+    padding: 20px 5.4px 20px 3px;
+    height: 94px;
+
+    width: 100%;
+  }
+
+  .single-task-name-container {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #666666;
+
+    margin-left: 11px;
+    margin-right: 2px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .single-task-name-container {
+    width: 270px;
+    height: 54px;
+  }
+}
