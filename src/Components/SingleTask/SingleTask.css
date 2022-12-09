@@ -1,7 +1,7 @@
 .single-task {
   display: flex;
   height: 72px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 35px;
   border-bottom: 1px solid #e5e5e5;
@@ -55,16 +55,11 @@
     font-size: 16px;
     line-height: 27px;
     text-transform: capitalize;
-    color: #666666;
-
     margin-left: 11px;
     margin-right: 2px;
   }
 }
 
 @media only screen and (max-width: 376px) {
-  .single-task-name-container {
-    width: 270px;
-    height: 54px;
-  }
+
 }
