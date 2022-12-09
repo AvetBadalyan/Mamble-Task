@@ -7,8 +7,15 @@ const initialState = {
 
 export const todoListSlice = createSlice({
   name: "todoList",
-  initialState,
+  initialState: JSON.parse(localStorage.getItem("redux-store")) || initialState,
   reducers: {
+    loadStorage: (state, action) => {
+      // let newState = JSON.parse(localStorage.getItem("redux-store"));
+      // if (newState) {
+      //   state = newState;
+      //   console.log(state, "state");
+      // }
+    },
     addTodo: (state, action) => {
       let newTodoList = {
         id: Math.random(),
@@ -35,7 +42,7 @@ export const todoListSlice = createSlice({
   },
 });
 
-export const { addTodo, deleteTask, toggleState, toggleHidden } =
+export const { addTodo, deleteTask, toggleState, toggleHidden, loadStorage } =
   todoListSlice.actions;
 
 export default todoListSlice.reducer;

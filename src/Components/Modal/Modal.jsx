@@ -7,11 +7,19 @@ export default function Modal({ removeTask }) {
   return (
     <Popup
       trigger={
-        <button style={{border:"none", margin: "0", padding: "0", background: "white"}} >
+        <button
+          style={{
+            border: "none",
+            margin: "0",
+            padding: "0",
+            background: "white",
+          }}
+        >
           <img src={deleteButton} alt="delete-btn" className="delete-btn" />
         </button>
       }
       position="top left"
+      lockScroll="true"
     >
       {(close) => (
         <div className="modal">

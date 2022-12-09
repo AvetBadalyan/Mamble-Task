@@ -6,8 +6,16 @@ import SingleTask from "./Components/SingleTask/SingleTask";
 import { toggleHidden } from "./features/todoList/todoListSlice";
 
 function App() {
-  const { todoList, isHidden } = useSelector((state) => state.todoListSlice);
+  const todoListSlice = useSelector((state) => state.todoListSlice);
+  const { todoList, isHidden } = todoListSlice;
+
   const dispatch = useDispatch();
+
+  function handleBeforeunload() {
+    localStorage.setItem("redux-store", JSON.stringify(todoListSlice));
+  }
+  window.addEventListener("beforeunload", handleBeforeunload);
+
   const hideChangeHandler = () => {
     dispatch(toggleHidden());
   };
@@ -18,7 +26,7 @@ function App() {
         <div
           className="hide-check-container"
           style={
-            todoList.length < 1
+            todoList?.length < 1
               ? { visibility: "hidden" }
               : { visibility: "visible" }
           }
