@@ -19,7 +19,7 @@ export default function Modal({ removeTask }) {
         </button>
       }
       position="top left"
-      lockScroll="true"
+      lockScroll={true}
     >
       {(close) => (
         <div className="modal">

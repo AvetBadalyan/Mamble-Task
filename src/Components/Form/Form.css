@@ -1,10 +1,11 @@
 .form {
   display: flex;
   gap: 24px;
+  width: 100%;
 }
 
 .form-input {
-  width: 80%;
+  width: 85%;
   max-width: 954px;
 }
 
@@ -51,12 +52,19 @@
   background: #008594;
   border-radius: 4px;
   border: none;
+  text-transform: capitalize;
+  color: #ffffff;
+  width: 100px;
+  height: 52px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  text-transform: capitalize;
-  color: #ffffff;
+  line-height: 28px;
+}
+
+.error-message {
+  color: red;
 }
 
 @media only screen and (max-width: 600px) {
@@ -67,6 +75,13 @@
 
   .form-input {
     width: 100%;
+  }
+
+  .form-input label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
   }
 
   .form-button {
@@ -88,6 +103,10 @@
     text-transform: capitalize;
     color: #ffffff;
   }
+
+  .error-message {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 376px) {
@@ -97,5 +116,9 @@
 
   .form-input input {
     height: 44px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
   }
 }

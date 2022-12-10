@@ -26,11 +26,12 @@ export default function SingleTask({ item }) {
   return (
     <div className={item.isCompleted ? "single-task completed" : "single-task"}>
       <input
-        className="checkbox"
         type="checkbox"
+        className="checkbox"
         checked={item.isCompleted}
         onChange={checkHandler}
       />
+
       <div className="single-task-name-container">{item.taskName}</div>
       <Modal removeTask={removeTask} />
     </div>

@@ -1,5 +1,5 @@
 .App {
-  padding: 146px 204px 10px 80px;
+  padding: 142px 204px 10px 80px;
   height: 100%;
 }
 
@@ -21,6 +21,7 @@
   text-transform: capitalize;
   color: #000000;
   visibility: hidden;
+  gap: 15px;
 }
 
 .todo-list-container {
@@ -56,7 +57,6 @@
   font-weight: 500;
   font-size: 36px;
   line-height: 54px;
-  letter-spacing: 0.002em;
   text-transform: capitalize;
   color: #666666;
 }
@@ -88,6 +88,12 @@
     padding-top: 67px;
   }
 
+  .hide-check-container {
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+  }
+
   .p1 {
     font-family: "Poppins";
     font-style: normal;
@@ -112,17 +118,12 @@
 }
 
 @media only screen and (max-width: 376px) {
-.App {
-  height: 819px;
-}
+  .App {
+    height: 819px;
+  }
 
   .p1 {
     width: 286px;
     height: 21px;
-  }
-
-  .p2 {
-    width: 316px;
-    height: 27px;
   }
 }

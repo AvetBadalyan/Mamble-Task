@@ -50,15 +50,16 @@ export default function Form() {
               onChange={changeHandler}
               maxLength="55"
             />
+            {!inputIsValid && (
+              <div className="error-message">{errorMessage}</div>
+            )}
           </label>
         </div>
         <div className="form-button">
           <button onClick={submitHandler}> Add </button>
         </div>
       </form>
-      <div>
-        {!inputIsValid && <div style={{ color: "red" }}>{errorMessage}</div>}
-      </div>
+      <div></div>
     </div>
   );
 }

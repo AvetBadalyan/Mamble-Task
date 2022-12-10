@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div
+        <label
           className="hide-check-container"
           style={
             todoList?.length < 1
@@ -31,16 +31,22 @@ function App() {
               : { visibility: "visible" }
           }
         >
-          <input type="checkbox" onChange={hideChangeHandler} />
-          Hide completed
-        </div>
+          <input
+            className="checkbox"
+            type="checkbox"
+            onChange={hideChangeHandler}
+          />
+          <span>Hide completed</span>
+        </label>
         <div className="form-container">
           <Form />
         </div>
         {todoList.length === 0 ? (
           <div className="blank-home-text">
-            <p className="p1">your life is a blank page. You write on it.</p>{" "}
-            <p className="p2">So start by adding your tasks here.</p>
+            <span className="p1">
+              your life is a blank page. You write on it.
+            </span>
+            <span className="p2">So start by adding your tasks here.</span>
           </div>
         ) : (
           <div className="todo-list-container">
