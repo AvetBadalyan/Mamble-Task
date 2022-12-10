@@ -1,3 +1,13 @@
+## Mamble Task - Todo list with Redux toolkit
+
+This is an app due to which you can add your tasks to complete, delete some or all of them, see completed ones with lighter color by checking the box, hide all completed ones and so on.
+With Mobile adaptation and responsive design!
+
+Go to WEBSITE of Mamble task - Todo with Redux toolkit [https://mamble-task-82ad0.web.app/](https://mamble-task-82ad0.web.app/) <br />
+
+![screenshot](./screenshots/mamble-web-screenshot.jpg)
+![screenshot](./screenshots/mamble-mobile-screenshot.jpg)
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
