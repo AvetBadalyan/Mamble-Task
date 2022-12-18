@@ -1,4 +1,4 @@
-import React, {useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../../features/todoList/todoListSlice";
 import "./Form.css";
@@ -59,7 +59,6 @@ export default function Form() {
           <button onClick={submitHandler}> Add </button>
         </div>
       </form>
-      <div></div>
     </div>
   );
 }
